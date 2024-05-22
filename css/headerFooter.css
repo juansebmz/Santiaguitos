@@ -1,0 +1,63 @@
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    backdrop-filter: blur(25px);
+    width: 100%;
+}
+header .logo  img{
+    height: 100px;
+    padding: 0 50px;
+}
+header nav{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header nav a{
+    justify-content: center;
+}
+
+header a:hover{
+    color: #1B9DD9;
+    transition-duration: 0.3s;
+
+}
+
+@media (max-width: 650px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header .logo{
+        justify-content: center;
+    }
+
+    nav a{
+        margin: 20px 0;
+    }
+    
+}
+
+/***************Footer***************/
+
+footer{
+    padding: 25px 0 10px 0;
+}
+footer p{
+    text-align: center;
+    line-height: 1.5;
+}
