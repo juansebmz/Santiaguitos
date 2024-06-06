@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="bienvenido">
+    <h1>¡Bienvenido <span>Santiaguito</span>!</h1>
+    <img src="assets/niño.png" alt="Niño Bienvenido">
+  </div>
+
+  <form (ngSubmit)="save()">
+    <div class="nombre-grado"><span>ESCOGE TU AVATAR</span></div>
+    <div id="avatar-background-container" class="avatar-container">
+      <img src="assets/ballena.png" alt="Avatar 1">
+      <img src="assets/perro_paz_y_amor.png" alt="Avatar 2">
+      <img src="assets/pinguino_helado.png" alt="Avatar 3">
+      <img src="assets/gato_corbata.png" alt="Avatar 4">
+    </div>
+    <div class="nombre-grado"><span>¿EN QUE GRADO ESTAS?</span></div>
+    <div class="otros-botones">
+      <button type="button" (click)="setGrado('Parvulos')">Parvulos</button>
+      <button type="button" (click)="setGrado('Pre Jardin')">Pre Jardin</button>
+      <button type="button" (click)="setGrado('Jardin')">Jardin</button>
+      <button type="button" (click)="setGrado('Transicion')">Transicion</button>
+    </div>
+    <div class="nombre-container">
+      <img class="nombre-circulo" src="assets/nombre.png" alt="Imagen">
+      <div class="nombre-input">
+        <input type="text" [(ngModel)]="nombre" [ngModelOptions]="{standalone: true}" id="nombre" name="nombre">
+        <img class="nombre-imagen" src="assets/lapiz.png" alt="Imagen">
+      </div>
+    </div>
+    <button type="submit" class="enviar">Enviar</button>
+  </form>
+</div>
